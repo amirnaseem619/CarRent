@@ -92,15 +92,17 @@ nav {
 main {
     width: 100%;
     height: 100vh;
-    background-color: #dee2e7;
+    background-color: #F6F7F9;
+    justify-content: center;
 }
 
 .hero-section-main-cards {
     width: 80vw;
     height: 50vh;
     margin: auto;
+    padding: 0 0 0 2.3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .first-rent-car-card {
@@ -116,6 +118,7 @@ main {
     color: white;
     border-radius: 10px;
     margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(235, 234, 239, 0.2);
 }
 
 .card-title {
@@ -152,11 +155,11 @@ main {
 }
 
 .first-rent-car-card img {
-   width: 250px;
-   height: 120px;
-   display: block;
-   margin-top: 10px;
-   align-self: center;
+    width: 250px;
+    height: 120px;
+    display: block;
+    margin-top: 10px;
+    align-self: center;
 }
 
 /* second hero card */
@@ -173,6 +176,7 @@ main {
     color: white;
     border-radius: 10px;
     margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .btn-rental2 {
@@ -193,26 +197,220 @@ main {
 }
 
 .second-rent-car-card img {
-   width: 210px;
-   height: 120px;
-   display: block;
-   margin-top: 10px;
-   align-self: center;
+    width: 210px;
+    height: 120px;
+    display: block;
+    margin-top: 10px;
+    align-self: center;
 }
 
 /* Pickup and Drop-off section */
-
-/* .pickup-dropoff {
+.pickup-dropoff {
     width: 80vw;
     height: 20vh;
-    border: 1px solid black;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
+
+/* -------------------------------------------------------------------------- */
 
 .pick-up {
     width: 32vw;
     height: 13vh;
     background-color: #FFFF;
     align-self: center;
+    border-radius: 8px;
+}
+
+.pick {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.80rem;
+    font-weight: 500;
+}
+
+h5 {
+    margin: 7px 0 0 5px;
+    color: #1A202C;
+    font-family: sans-serif;
+}
+
+h5 img {
+    margin-top: 2px;
+    height: 10px;
+}
+
+.location-date-time {
+    display: flex;
+    margin: 16px 0 0 9px;
+    gap: 7px;
+}
+
+.location h3 {
+    font-size: 0.80rem;
+    font-family: sans-serif;
+    margin-left: 4px;
+}
+
+.location select {
+    border: none;
+    color: #5f6368;
+    font-size: 0.65;
+}
+
+.date h3 {
+    font-size: 0.80rem;
+    font-family: sans-serif;
+    margin-left: 4px;
+}
+
+.date select {
+    border: none;
+    color: #5f6368;
+    font-size: 0.65;
+}
+
+.time h3 {
+    font-size: 0.80rem;
+    font-family: sans-serif;
+    margin-left: 4px;
+}
+
+.time select {
+    border: none;
+    color: #5f6368;
+    font-size: 0.65;
+}
+
+/* arrow button */
+.arrow-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #3563E9;
+    color: white;
     border-radius: 10px;
-} */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(53, 99, 233, 0.4);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* drop off */
+.drop-off {
+    width: 32vw;
+    height: 13vh;
+    background-color: #FFFF;
+    align-self: center;
+    border-radius: 8px;
+}
+
+/* --- Responsive Layout for Pick-up & Drop-off on smaller screens --- */
+@media (max-width: 950px) {
+    header {
+        height: auto;
+        min-height: 13vh;
+        padding: 15px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo-and-searchbar {
+        display: contents;
+    }
+
+    .logo {
+        flex: 1 1 40%;
+        margin-left: 20px;
+    }
+
+    .logo h2 {
+        margin-bottom: 0px;
+    }
+
+    .heart-notification-setting-profile {
+        flex: 1 1 40%;
+        margin-right: 20px;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+
+    .searchbar {
+        flex: 1 1 100%;
+        width: 90vw;
+        max-width: 450px;
+        margin: 5px auto;
+        order: 3;
+    }
+
+    main {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .hero-section-main-cards {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .first-rent-car-card,
+    .second-rent-car-card {
+        width: 100%;
+        height: auto;
+        min-height: 25vh;
+        padding-bottom: 25px;
+    }
+
+    .pickup-dropoff {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .pick-up,
+    .drop-off {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .location-date-time {
+        flex-wrap: wrap;
+        padding-right: 15px;
+        justify-content: space-between;
+    }
+
+    .location,
+    .date,
+    .time {
+        flex: 1 1 30%;
+        min-width: 90px;
+    }
+
+    .location select,
+    .date select,
+    .time select {
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .arrow-btn {
+        margin: 5px 0;
+        z-index: 5;
+    }
+}
