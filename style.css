@@ -91,7 +91,7 @@ nav {
 /* hero section */
 main {
     width: 100%;
-    height: 100vh;
+    height: 180vh;
     background-color: #F6F7F9;
     justify-content: center;
 }
@@ -261,6 +261,10 @@ h5 img {
     font-size: 0.65;
 }
 
+.date {
+    border-left: 1px solid rgb(228, 218, 218);
+}
+
 .date h3 {
     font-size: 0.80rem;
     font-family: sans-serif;
@@ -271,6 +275,10 @@ h5 img {
     border: none;
     color: #5f6368;
     font-size: 0.65;
+}
+
+.time {
+    border-left: 1px solid rgb(228, 218, 218);
 }
 
 .time h3 {
@@ -311,6 +319,161 @@ h5 img {
     align-self: center;
     border-radius: 8px;
 }
+
+/* All cars collection category */
+/* Popular car and View All */
+.first-car-collection-container {
+    width: 75vw;
+    height: 48vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.popularcar-viewall {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0 1.6rem 0 1.6rem;
+    height: 5vh;
+}
+
+.popularcar-viewall p {
+    font-size: .86rem;
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.popularcar-viewall h6 {
+    font-size: .86rem;
+    font-family: sans-serif;
+    color: #3563E9;
+    font-weight: 500;
+}
+
+/* Cars Category */
+.cars-category {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-car-box {
+    background-color: white;
+    width: 17vw;
+    border-radius: 5px;
+}
+
+.name-favourate {
+    display: flex;
+    justify-content: space-between;
+    padding: .60rem 0.50rem 0 .50rem;
+}
+
+.name-favourate h4 {
+    font-size: 1rem;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.name-favourate p {
+    color: grey;
+    font-family: sans-serif;
+    font-size: .90rem;
+}
+
+.car-image {
+    width: 100%;
+    height: 15vh;
+    box-shadow: 0 -15px 15px -5px white inset;
+}
+
+.car-image img {
+    width: 13vw;
+    margin: 2rem auto 0 1rem;
+}
+
+.gas-manuel-user {
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.gas-manuel-user .gas {
+    display: flex;
+}
+
+.gas p {
+    color: gray;
+    font-size: .80rem;
+    font-family: sans-serif;
+}
+.gas-manuel-user .manuel {
+    display: flex;
+}
+
+.manuel p {
+    color: gray;
+    font-size: .80rem;
+    font-family: sans-serif;
+}
+.gas-manuel-user .users {
+    display: flex;
+}
+
+.users p {
+    color: gray;
+    font-size: .80rem;
+    font-family: sans-serif;
+}
+
+/* price and rent now button */
+.price-and-button {
+    width: 100%;
+    height: 7vh;
+    padding: 0 .50rem 0 .50rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 0 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price h3 {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+.price p {
+    color: grey;
+    font-family: sans-serif;
+    font-size: .80rem;
+}
+
+.price-and-button button {
+    width: 7vw;
+    height: 6vh;
+    border: none;
+    border-radius: 5px;
+    background-color: #3563E9;
+    color: white;
+    font-size: .90rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
 
 /* --- Responsive Layout for Pick-up & Drop-off on smaller screens --- */
 @media (max-width: 950px) {
@@ -354,7 +517,7 @@ h5 img {
     }
 
     main {
-        height: auto;
+        height: 400vh;
         padding-bottom: 50px;
     }
 
@@ -412,5 +575,88 @@ h5 img {
     .arrow-btn {
         margin: 5px 0;
         z-index: 5;
+    }
+
+    .cars-category {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.3rem;
+    }
+
+    .first-car-box {
+        width: 100%;
+    }
+
+    .name-favourate {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+
+    .name-favourate h4 {
+        font-size: 2rem;
+    }
+
+    .car-image {
+    width: 100%;
+    height: 15vh;
+    box-shadow: 0 -15px 15px -5px white inset;
+    }
+
+    .car-image img {
+        width: 35vh;
+        align-self: center;
+        margin-left: 8rem;
+    }
+
+    .gas-manuel-user {
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.gas-manuel-user i {
+    font-size: 30px;
+}
+
+.gas p {
+    font-size: 1.4rem;
+    margin-top: 7px;
+}
+.manuel p {
+    font-size: 1.4rem;
+    margin-top: 7px;
+}
+.users p {
+    font-size: 1.4rem;
+    margin-top: 7px;
+}
+
+.price-and-button {
+    justify-content: space-around;
+    align-items: center;
+    padding: .40rem 0 0 0;
+}
+
+.price-and-button h3 {
+    font-size: 1.6rem;
+}
+
+.price-and-button p {
+    font-size: 1.4rem;
+}
+
+.price-and-button button {
+    width: 15vw;
+}
+    
+}
+
+@media(max-width: 504px) {
+
+    .car-image img {
+        margin-left: 5rem;
     }
 }
