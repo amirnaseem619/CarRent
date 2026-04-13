@@ -1,352 +1,962 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CarRent - Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <!-- logo and search bar container -->
-            <div class="logo-and-searchbar">
-                <div class="logo">
-              <h2>MORENT</h2> 
-            </div>
+      <nav>
+        <!-- logo and search bar container -->
+        <div class="logo-and-searchbar">
+          <div class="logo">
+            <h2>MORENT</h2>
+          </div>
 
-            <div class="searchbar">
-
-                <div class="search-icon-and-field">
-                     <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" class="search-input" placeholder="Search something here">
-                </div>
-                <i class="fa-solid fa-sliders filter-icon"></i>
+          <div class="searchbar">
+            <div class="search-icon-and-field">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search something here"
+              />
             </div>
-            </div>
-
-            <!-- heart, notification, setting and profile container -->
-             <div class="heart-notification-setting-profile">
-                <!-- heart -->
-                <i class="fa-solid fa-heart"></i>
-                <!-- notification -->
-                <i class="fa-solid fa-bell"></i>
-                <!-- setting -->
-                 <i class="fa-solid fa-gear"></i>
-                 <!-- profile -->
-                  <div class="profile"></div>
-             </div>
-        </nav>
-    </header>
-
-
-    <!-- hero section -->
-     <main>
-        <div class="hero-section-main-cards">
-            <!-- first card -->
-            <div class="first-rent-car-card">
-                <div class="first-card-content">
-                    <h2 class="card-title">The Best Platform <br> For Car Rental</h2>
-                    <p class="card-subtitle">Ease of doing a car rental safely and <br> reliably. Of course at a low price.</p>
-                    <button class="btn-rental">Rental Car</button>
-                </div>
-                    <img src="images/image 7.png" alt="">
-                
-            </div>
-            <!-- second card -->
-             <div class="second-rent-car-card">
-                 <div class="second-card-content">
-                    <h2 class="card-title">Easy way to rent a <br> car at a low price</h2>
-                    <p class="card-subtitle">Providing cheap car rental services <br> and safe and comfortable facilities.</p>
-                    <button class="btn-rental2">Rental Car</button>
-                </div>
-                    <img src="images/image 8.png" alt="">
-            </div>
+            <i class="fa-solid fa-sliders filter-icon"></i>
+          </div>
         </div>
 
-        <!-- Pickup and Drop-off section -->
-         <div class="pickup-dropoff">
-            <div class="pick-up">
-                <div class="pick">
-                    <h5><img src="images/mark.png" alt="mark">Pick-Up</h5>
-                </div>
+        <!-- heart, notification, setting and profile container -->
+        <div class="heart-notification-setting-profile">
+          <!-- heart -->
+          <i class="fa-solid fa-heart"></i>
+          <!-- notification -->
+          <i class="fa-solid fa-bell"></i>
+          <!-- setting -->
+          <i class="fa-solid fa-gear"></i>
+          <!-- profile -->
+          <div class="profile"></div>
+        </div>
+      </nav>
+    </header>
 
-                <!-- location date time -->
-                 <div class="location-date-time">
-                <!-- Location -->
-                 <div class="location">
-                    <h3>Locations</h3>
-                    <select name="locate" id="location">
-                        <option value=".">Select your city</option>
-                    </select>
-                 </div>
-                 <!-- Date -->
-                 <div class="date">
-                    <h3>Date</h3>
-                    <select name="locate" id="location">
-                        <option value=".">Select your date</option>
-                    </select>
-                 </div>
-                 <!-- Time -->
-                 <div class="time">
-                    <h3>Time</h3>
-                    <select name="locate" id="location">
-                        <option value=".">Select your time</option>
-                    </select>
-                 </div>
-                 </div>
+    <!-- hero section -->
+    <main>
+      <div class="hero-section-main-cards">
+        <!-- first card -->
+        <div class="first-rent-car-card">
+          <div class="first-card-content">
+            <h2 class="card-title">
+              The Best Platform <br />
+              For Car Rental
+            </h2>
+            <p class="card-subtitle">
+              Ease of doing a car rental safely and <br />
+              reliably. Of course at a low price.
+            </p>
+            <button class="btn-rental">Rental Car</button>
+          </div>
+          <img src="images/image 7.png" alt="" />
+        </div>
+        <!-- second card -->
+        <div class="second-rent-car-card">
+          <div class="second-card-content">
+            <h2 class="card-title">
+              Easy way to rent a <br />
+              car at a low price
+            </h2>
+            <p class="card-subtitle">
+              Providing cheap car rental services <br />
+              and safe and comfortable facilities.
+            </p>
+            <button class="btn-rental2">Rental Car</button>
+          </div>
+          <img src="images/image 8.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Pickup and Drop-off section -->
+      <div class="pickup-dropoff">
+        <div class="pick-up">
+          <div class="pick">
+            <h5><img src="images/mark.png" alt="mark" />Pick-Up</h5>
+          </div>
+
+          <!-- location date time -->
+          <div class="location-date-time">
+            <!-- Location -->
+            <div class="location">
+              <h3>Locations</h3>
+              <select name="locate" id="location">
+                <option value=".">Select your city</option>
+              </select>
+            </div>
+            <!-- Date -->
+            <div class="date">
+              <h3>Date</h3>
+              <select name="locate" id="location">
+                <option value=".">Select your date</option>
+              </select>
+            </div>
+            <!-- Time -->
+            <div class="time">
+              <h3>Time</h3>
+              <select name="locate" id="location">
+                <option value=".">Select your time</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- arrow icon button -->
+        <button class="arrow-btn">
+          <i class="fa-solid fa-up-down" style="color: rgb(253, 253, 254)"></i>
+        </button>
+
+        <!-- drop off -->
+
+        <div class="drop-off">
+          <div class="pick">
+            <h5><img src="images/mark.png" alt="mark" />Pick-Up</h5>
+          </div>
+
+          <!-- location date time -->
+          <div class="location-date-time">
+            <!-- Location -->
+            <div class="location">
+              <h3>Locations</h3>
+              <select name="locate" id="location">
+                <option value=".">Select your city</option>
+              </select>
+            </div>
+            <!-- Date -->
+            <div class="date">
+              <h3>Date</h3>
+              <select name="locate" id="location">
+                <option value=".">Select your date</option>
+              </select>
+            </div>
+            <!-- Time -->
+            <div class="time">
+              <h3>Time</h3>
+              <select name="locate" id="location">
+                <option value=".">Select your time</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cars Collection all category -->
+
+      <div class="first-car-collection-container">
+        <div class="popularcar-viewall">
+          <p>Popular Car</p>
+          <h6>View All</h6>
+        </div>
+
+        <!-- Cars category -->
+        <div class="cars-category">
+          <!-- First car box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>Koenigsegg</h4>
+                <p>Sport</p>
+              </div>
+              <!-- Favourate -->
+              <i class="fa-solid fa-heart" style="color: red"></i>
             </div>
 
-             <!-- arrow icon button -->
-          <button class="arrow-btn">
-           <i class="fa-solid fa-up-down" style="color: rgb(253, 253, 254);"></i>
-          </button>
-
-          <!-- drop off -->
-
-           <div class="drop-off">
-                <div class="pick">
-                    <h5><img src="images/mark.png" alt="mark">Pick-Up</h5>
-                </div>
-
-                <!-- location date time -->
-                 <div class="location-date-time">
-                <!-- Location -->
-                 <div class="location">
-                    <h3>Locations</h3>
-                    <select name="locate" id="location">
-                        <option value=".">Select your city</option>
-                    </select>
-                 </div>
-                 <!-- Date -->
-                 <div class="date">
-                    <h3>Date</h3>
-                    <select name="locate" id="location">
-                        <option value=".">Select your date</option>
-                    </select>
-                 </div>
-                 <!-- Time -->
-                 <div class="time">
-                    <h3>Time</h3>
-                    <select name="locate" id="location">
-                        <option value=".">Select your time</option>
-                    </select>
-                 </div>
-                 </div>
-            </div>
-           
-         </div>
-
-         <!-- Cars Collection all category -->
-
-         <div class="first-car-collection-container">
-            <div class="popularcar-viewall">
-                <p>Popular Car</p>
-                <h6>View All</h6>
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_one.png" alt="Koenigsegg" />
             </div>
 
-            <!-- Cars category -->
-             <div class="cars-category">
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>90L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>2 People</p>
+              </div>
+            </div>
 
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$99.00/</h3>
+                <p>day</p>
+              </div>
 
-                <!-- First car box -->
-                <div class="first-car-box">
-                    <!-- name and favorate -->
-                    <div class="name-favourate">
-                        <!-- Name -->
-                        <div class="name">
-                        <h4>Koenigsegg</h4>
-                        <p>Sport</p>
-                        </div>
-                        <!-- Favourate -->
-                         <i class="fa-solid fa-heart" style="color: red;"></i>
-                    </div>
+              <button>Rent Now</button>
+            </div>
+          </div>
+          <!-- Second Car Box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>Nissan GT - R</h4>
+                <p>Sport</p>
+              </div>
+              <!-- Favourate -->
+              <i
+                class="fa-solid fa-heart"
+                style="color: rgb(150, 149, 145)"
+              ></i>
+            </div>
 
-                    <!-- car image -->
-                    <div class="car-image">
-                        <img src="images/Car_one.png" alt="Koenigsegg">
-                    </div>
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_two.png" alt="Nissan GT - R" />
+            </div>
 
-                    <!-- Gas/L, Manuel/auto and users row -->
-                     <div class="gas-manuel-user">
-                        <!-- Gas -->
-                         <div class="gas">
-                            <i class="fa-solid fa-gas-pump" style="color: rgb(151, 147, 147);"></i>
-                            <p>90L</p>
-                         </div>
-                        <!-- Manuel/auto -->
-                         <div class="manuel">
-                            <i class="fa-solid fa-dharmachakra" style="color: rgb(151, 147, 147);"></i>
-                            <p>Manuel</p>
-                         </div>
-                        <!-- users -->
-                         <div class="users">
-                            <i class="fa-solid fa-users" style="color: rgb(151, 147, 147);"></i>
-                            <p>2 People</p>
-                         </div>
-                     </div>
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>80L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>2 People</p>
+              </div>
+            </div>
 
-                     <!-- price and rent now button -->
-                      <div class="price-and-button">
-                        <!-- price per days -->
-                        <div class="price">
-                            <h3>$99.00/</h3>
-                            <p>day</p>
-                        </div>
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$80.00/</h3>
+                <p>day</p>
+              </div>
 
-                        <button>Rent Now</button>
-                      </div>
-                </div>
-                <!-- Second Car Box -->
-                  <div class="first-car-box">
-                    <!-- name and favorate -->
-                    <div class="name-favourate">
-                        <!-- Name -->
-                        <div class="name">
-                        <h4>Nissan GT - R</h4>
-                        <p>Sport</p>
-                        </div>
-                        <!-- Favourate -->
-                         <i class="fa-solid fa-heart" style="color: rgb(150, 149, 145);"></i>
-                    </div>
+              <button>Rent Now</button>
+            </div>
+          </div>
 
-                    <!-- car image -->
-                    <div class="car-image">
-                        <img src="images/Car_two.png" alt="Nissan GT - R">
-                    </div>
+          <!-- Third Car box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>Rolls - Royce</h4>
+                <p>Sedan</p>
+              </div>
+              <!-- Favourate -->
+              <i class="fa-solid fa-heart" style="color: red"></i>
+            </div>
 
-                    <!-- Gas/L, Manuel/auto and users row -->
-                     <div class="gas-manuel-user">
-                        <!-- Gas -->
-                         <div class="gas">
-                            <i class="fa-solid fa-gas-pump" style="color: rgb(151, 147, 147);"></i>
-                            <p>80L</p>
-                         </div>
-                        <!-- Manuel/auto -->
-                         <div class="manuel">
-                            <i class="fa-solid fa-dharmachakra" style="color: rgb(151, 147, 147);"></i>
-                            <p>Manuel</p>
-                         </div>
-                        <!-- users -->
-                         <div class="users">
-                            <i class="fa-solid fa-users" style="color: rgb(151, 147, 147);"></i>
-                            <p>2 People</p>
-                         </div>
-                     </div>
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_three.png" alt="Rolls - Royce" />
+            </div>
 
-                     <!-- price and rent now button -->
-                      <div class="price-and-button">
-                        <!-- price per days -->
-                        <div class="price">
-                            <h3>$80.00/</h3>
-                            <p>day</p>
-                        </div>
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>70L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>2 People</p>
+              </div>
+            </div>
 
-                        <button>Rent Now</button>
-                      </div>
-                </div>
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$96.00/</h3>
+                <p>day</p>
+              </div>
 
-                <!-- Third Car box -->
-                  <div class="first-car-box">
-                    <!-- name and favorate -->
-                    <div class="name-favourate">
-                        <!-- Name -->
-                        <div class="name">
-                        <h4>Rolls - Royce</h4>
-                        <p>Sedan</p>
-                        </div>
-                        <!-- Favourate -->
-                         <i class="fa-solid fa-heart" style="color: red;"></i>
-                    </div>
+              <button>Rent Now</button>
+            </div>
+          </div>
 
-                    <!-- car image -->
-                    <div class="car-image">
-                        <img src="images/Car_three.png" alt="Rolls - Royce">
-                    </div>
+          <!-- Fourth car box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>Nissan GT - R</h4>
+                <p>Sport</p>
+              </div>
+              <!-- Favourate -->
+              <i
+                class="fa-solid fa-heart"
+                style="color: rgb(151, 147, 147)"
+              ></i>
+            </div>
 
-                    <!-- Gas/L, Manuel/auto and users row -->
-                     <div class="gas-manuel-user">
-                        <!-- Gas -->
-                         <div class="gas">
-                            <i class="fa-solid fa-gas-pump" style="color: rgb(151, 147, 147);"></i>
-                            <p>70L</p>
-                         </div>
-                        <!-- Manuel/auto -->
-                         <div class="manuel">
-                            <i class="fa-solid fa-dharmachakra" style="color: rgb(151, 147, 147);"></i>
-                            <p>Manuel</p>
-                         </div>
-                        <!-- users -->
-                         <div class="users">
-                            <i class="fa-solid fa-users" style="color: rgb(151, 147, 147);"></i>
-                            <p>2 People</p>
-                         </div>
-                     </div>
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_four.png" alt="Nissan GT - R" />
+            </div>
 
-                     <!-- price and rent now button -->
-                      <div class="price-and-button">
-                        <!-- price per days -->
-                        <div class="price">
-                            <h3>$96.00/</h3>
-                            <p>day</p>
-                        </div>
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>80L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>2 People</p>
+              </div>
+            </div>
 
-                        <button>Rent Now</button>
-                      </div>
-                </div>
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$80.00/</h3>
+                <p>day</p>
+              </div>
 
-                <!-- Fourth car box -->
-                  <div class="first-car-box">
-                    <!-- name and favorate -->
-                    <div class="name-favourate">
-                        <!-- Name -->
-                        <div class="name">
-                        <h4>Nissan GT - R</h4>
-                        <p>Sport</p>
-                        </div>
-                        <!-- Favourate -->
-                         <i class="fa-solid fa-heart" style="color: rgb(151, 147, 147);"></i>
-                    </div>
+              <button>Rent Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                    <!-- car image -->
-                    <div class="car-image">
-                        <img src="images/Car_four.png" alt="Nissan GT - R">
-                    </div>
+      <!-- Second Car Collection -->
 
-                    <!-- Gas/L, Manuel/auto and users row -->
-                     <div class="gas-manuel-user">
-                        <!-- Gas -->
-                         <div class="gas">
-                            <i class="fa-solid fa-gas-pump" style="color: rgb(151, 147, 147);"></i>
-                            <p>80L</p>
-                         </div>
-                        <!-- Manuel/auto -->
-                         <div class="manuel">
-                            <i class="fa-solid fa-dharmachakra" style="color: rgb(151, 147, 147);"></i>
-                            <p>Manuel</p>
-                         </div>
-                        <!-- users -->
-                         <div class="users">
-                            <i class="fa-solid fa-users" style="color: rgb(151, 147, 147);"></i>
-                            <p>2 People</p>
-                         </div>
-                     </div>
+      <div class="first-car-collection-container">
+        <div class="popularcar-viewall">
+          <p>Recomendation Car</p>
+          <h6>View All</h6>
+        </div>
 
-                     <!-- price and rent now button -->
-                      <div class="price-and-button">
-                        <!-- price per days -->
-                        <div class="price">
-                            <h3>$80.00/</h3>
-                            <p>day</p>
-                        </div>
+        <!-- Cars category -->
+        <div class="cars-category">
+          <!-- First car box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>All New Rush</h4>
+                <p>SUV</p>
+              </div>
+              <!-- Favourate -->
+              <i
+                class="fa-solid fa-heart"
+                style="color: rgb(151, 147, 147)"
+              ></i>
+            </div>
 
-                        <button>Rent Now</button>
-                      </div>
-                </div>
-             </div>
-         </div>
-        
-     </main>
-</body>
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_five.png" alt="Koenigsegg" />
+            </div>
+
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>70L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>6 People</p>
+              </div>
+            </div>
+
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$72.00/</h3>
+                <p>day</p>
+              </div>
+
+              <button>Rent Now</button>
+            </div>
+          </div>
+          <!-- Second Car Box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>CR - V</h4>
+                <p>SUV</p>
+              </div>
+              <!-- Favourate -->
+              <i class="fa-solid fa-heart" style="color: red"></i>
+            </div>
+
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_six.png" alt="Nissan GT - R" />
+            </div>
+
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>80L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>6 People</p>
+              </div>
+            </div>
+
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$80.00/</h3>
+                <p>day</p>
+              </div>
+
+              <button>Rent Now</button>
+            </div>
+          </div>
+
+          <!-- Third Car box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>All New Terios</h4>
+                <p>SUV</p>
+              </div>
+              <!-- Favourate -->
+              <i
+                class="fa-solid fa-heart"
+                style="color: rgb(151, 147, 147)"
+              ></i>
+            </div>
+
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_seven.png" alt="Rolls - Royce" />
+            </div>
+
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>90L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>6 People</p>
+              </div>
+            </div>
+
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$74.00/</h3>
+                <p>day</p>
+              </div>
+
+              <button>Rent Now</button>
+            </div>
+          </div>
+
+          <!-- Fourth car box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>CR - V</h4>
+                <p>SUV</p>
+              </div>
+              <!-- Favourate -->
+              <i class="fa-solid fa-heart" style="color: red"></i>
+            </div>
+
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_eight.png" alt="Nissan GT - R" />
+            </div>
+
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>80L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>6 People</p>
+              </div>
+            </div>
+
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$80.00/</h3>
+                <p>day</p>
+              </div>
+
+              <button>Rent Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Car Collection -->
+
+      <div class="first-car-collection-container">
+        <!-- Cars category -->
+        <div class="cars-category">
+          <!-- First car box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>MG ZX Exclusice</h4>
+                <p>Hatchback</p>
+              </div>
+              <!-- Favourate -->
+              <i class="fa-solid fa-heart" style="color: red"></i>
+            </div>
+
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_nine.png" alt="Koenigsegg" />
+            </div>
+
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>70L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>4 People</p>
+              </div>
+            </div>
+
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$76.00/</h3>
+                <p>day</p>
+              </div>
+
+              <button>Rent Now</button>
+            </div>
+          </div>
+          <!-- Second Car Box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>New MG ZS</h4>
+                <p>SUV</p>
+              </div>
+              <!-- Favourate -->
+              <i
+                class="fa-solid fa-heart"
+                style="color: rgb(151, 147, 147)"
+              ></i>
+            </div>
+
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_ten.png" alt="Nissan GT - R" />
+            </div>
+
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>80L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>6 People</p>
+              </div>
+            </div>
+
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$80.00/</h3>
+                <p>day</p>
+              </div>
+
+              <button>Rent Now</button>
+            </div>
+          </div>
+
+          <!-- Third Car box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>MG ZX Excite</h4>
+                <p>Hatchback</p>
+              </div>
+              <!-- Favourate -->
+              <i class="fa-solid fa-heart" style="color: red"></i>
+            </div>
+
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_eleven.png" alt="Rolls - Royce" />
+            </div>
+
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>90L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>4 People</p>
+              </div>
+            </div>
+
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$74.00/</h3>
+                <p>day</p>
+              </div>
+
+              <button>Rent Now</button>
+            </div>
+          </div>
+
+          <!-- Fourth car box -->
+          <div class="first-car-box">
+            <!-- name and favorate -->
+            <div class="name-favourate">
+              <!-- Name -->
+              <div class="name">
+                <h4>New MG ZS</h4>
+                <p>SUV</p>
+              </div>
+              <!-- Favourate -->
+              <i
+                class="fa-solid fa-heart"
+                style="color: rgb(151, 147, 147)"
+              ></i>
+            </div>
+
+            <!-- car image -->
+            <div class="car-image">
+              <img src="images/Car_twelve.png" alt="Nissan GT - R" />
+            </div>
+
+            <!-- Gas/L, Manuel/auto and users row -->
+            <div class="gas-manuel-user">
+              <!-- Gas -->
+              <div class="gas">
+                <i
+                  class="fa-solid fa-gas-pump"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>80L</p>
+              </div>
+              <!-- Manuel/auto -->
+              <div class="manuel">
+                <i
+                  class="fa-solid fa-dharmachakra"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>Manuel</p>
+              </div>
+              <!-- users -->
+              <div class="users">
+                <i
+                  class="fa-solid fa-users"
+                  style="color: rgb(151, 147, 147)"
+                ></i>
+                <p>6 People</p>
+              </div>
+            </div>
+
+            <!-- price and rent now button -->
+            <div class="price-and-button">
+              <!-- price per days -->
+              <div class="price">
+                <h3>$80.00/</h3>
+                <p>day</p>
+              </div>
+
+              <button>Rent Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show more car Button -->
+      <div class="show-more-car">
+        <button>Show more car</button>
+        <span>120 cars</span>
+      </div>
+
+      <!-- F O O T E R -->
+      <footer>
+        <div class="footer-container">
+          <div class="logo-and-p">
+            <div class="logo">
+              <h2>MORENT</h2>
+            </div>
+
+            <!-- paragraph -->
+            <p>
+              Our vision is to provide convenience <br />
+              and help increase your sales business.
+            </p>
+          </div>
+
+          <!-- About, Community and Social -->
+           <div class="about-community-social">
+             <!-- About -->
+          <div class="about">
+            <h3>About</h3>
+            <p>
+              How it works <br />
+              Featured <br />
+              Partnership <br />
+              Business Relation
+            </p>
+          </div>
+
+          <!-- Community -->
+            <div class="about">
+            <h3>Community</h3>
+            <p>
+              Events <br />
+              Blog <br />
+              Podcast <br />
+              Invite a friend
+            </p>
+          </div>
+
+          <!-- Social -->
+            <div class="about">
+            <h3>Social</h3>
+            <p>
+              Discord <br />
+              Instagram <br />
+              Twitter <br />
+              Facebook
+            </p>
+          </div>
+           </div>
+         
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>

@@ -44,7 +44,8 @@ nav {
 
 .searchbar {
     display: flex;
-    width: 35vw;
+    flex: 1;
+    max-width: 450px;
     justify-content: space-between;
     align-items: center;
     background-color: #f6f7f9;
@@ -91,34 +92,34 @@ nav {
 /* hero section */
 main {
     width: 100%;
-    height: 180vh;
-    background-color: #F6F7F9;
-    justify-content: center;
+    min-height: 100vh;
+    background-color: #ececed;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-section-main-cards {
-    width: 80vw;
-    height: 50vh;
-    margin: auto;
-    padding: 0 0 0 2.3rem;
+    width: 90vw;
+    max-width: 1200px;
+    margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
 }
 
 .first-rent-car-card {
-    width: 35vw;
-    height: 45vh;
+    width: 100%;
     background-color: #5CAFFC;
     padding: 25px;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     overflow: hidden;
     color: white;
     border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 10px 25px rgba(235, 234, 239, 0.2);
+    box-shadow: 0 5px 15px rgba(53, 99, 233, 0.4);
 }
 
 .card-title {
@@ -155,28 +156,27 @@ main {
 }
 
 .first-rent-car-card img {
-    width: 250px;
-    height: 120px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
     align-self: center;
 }
 
 /* second hero card */
 .second-rent-car-card {
-    width: 35vw;
-    height: 45vh;
+    width: 100%;
     background-color: #3563E9;
     padding: 25px;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     overflow: hidden;
     color: white;
     border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(53, 99, 233, 0.4);
 }
 
 .btn-rental2 {
@@ -197,32 +197,35 @@ main {
 }
 
 .second-rent-car-card img {
-    width: 210px;
-    height: 120px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
     align-self: center;
 }
 
 /* Pickup and Drop-off section */
 .pickup-dropoff {
-    width: 80vw;
-    height: 20vh;
-    margin: auto;
+    width: 90vw;
+    max-width: 1200px;
+    margin: 20px auto;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 /* -------------------------------------------------------------------------- */
 
 .pick-up {
-    width: 32vw;
-    height: 13vh;
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
     background-color: #FFFF;
-    align-self: center;
     border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(170, 174, 190, 0.4);
 }
 
 .pick {
@@ -245,8 +248,9 @@ h5 img {
 
 .location-date-time {
     display: flex;
-    margin: 16px 0 0 9px;
-    gap: 7px;
+    margin-top: 16px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .location h3 {
@@ -313,19 +317,20 @@ h5 img {
 
 /* drop off */
 .drop-off {
-    width: 32vw;
-    height: 13vh;
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
     background-color: #FFFF;
-    align-self: center;
     border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(148, 154, 171, 0.4);
 }
 
 /* All cars collection category */
 /* Popular car and View All */
 .first-car-collection-container {
-    width: 75vw;
-    height: 48vh;
-    margin: auto;
+    width: 90vw;
+    max-width: 1200px;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -357,15 +362,19 @@ h5 img {
 /* Cars Category */
 .cars-category {
     width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
 }
 
 .first-car-box {
     background-color: white;
-    width: 17vw;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dce2f3;
+    display: flex;
+    flex-direction: column;
 }
 
 .name-favourate {
@@ -389,13 +398,17 @@ h5 img {
 
 .car-image {
     width: 100%;
-    height: 15vh;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 -15px 15px -5px white inset;
 }
 
 .car-image img {
-    width: 13vw;
-    margin: 2rem auto 0 1rem;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
 }
 
 .gas-manuel-user {
@@ -463,8 +476,7 @@ h5 img {
 }
 
 .price-and-button button {
-    width: 7vw;
-    height: 6vh;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     background-color: #3563E9;
@@ -472,6 +484,64 @@ h5 img {
     font-size: .90rem;
     font-family: sans-serif;
     font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* Show more car */
+.show-more-car button  {
+    background-color: #3563E9;
+    width: 140px;
+    height: 40px;
+    margin: 0 auto 0 auto;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: .90rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    box-shadow: 0 5px 15px rgba(53, 99, 233, 0.4);
+}
+
+.show-more-car {
+      width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.show-more-car span {
+    font-size: .80rem;
+    font-family: sans-serif;
+    color: #aba7a7;
+    align-self: self-end;
+    font-weight: bold;
+}
+
+/* F O O T E R */
+footer {
+    width: 100%;
+    background-color: white;
+    padding: 40px 20px;
+    margin-top: auto;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* About, Community and Social */
+.about-community-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 
@@ -514,149 +584,5 @@ h5 img {
         max-width: 450px;
         margin: 5px auto;
         order: 3;
-    }
-
-    main {
-        height: 400vh;
-        padding-bottom: 50px;
-    }
-
-    .hero-section-main-cards {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding-bottom: 20px;
-    }
-
-    .first-rent-car-card,
-    .second-rent-car-card {
-        width: 100%;
-        height: auto;
-        min-height: 25vh;
-        padding-bottom: 25px;
-    }
-
-    .pickup-dropoff {
-        flex-direction: column;
-        height: auto;
-        gap: 20px;
-        padding: 20px 0;
-    }
-
-    .pick-up,
-    .drop-off {
-        width: 100%;
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    .location-date-time {
-        flex-wrap: wrap;
-        padding-right: 15px;
-        justify-content: space-between;
-    }
-
-    .location,
-    .date,
-    .time {
-        flex: 1 1 30%;
-        min-width: 90px;
-    }
-
-    .location select,
-    .date select,
-    .time select {
-        width: 100%;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-
-    .arrow-btn {
-        margin: 5px 0;
-        z-index: 5;
-    }
-
-    .cars-category {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1.3rem;
-    }
-
-    .first-car-box {
-        width: 100%;
-    }
-
-    .name-favourate {
-        padding: 2rem;
-        font-size: 3rem;
-    }
-
-    .name-favourate h4 {
-        font-size: 2rem;
-    }
-
-    .car-image {
-    width: 100%;
-    height: 15vh;
-    box-shadow: 0 -15px 15px -5px white inset;
-    }
-
-    .car-image img {
-        width: 35vh;
-        align-self: center;
-        margin-left: 8rem;
-    }
-
-    .gas-manuel-user {
-    width: 100%;
-    height: 4vh;
-    display: flex;
-    margin-top: 2rem;
-    justify-content: space-around;
-    align-items: end;
-}
-
-.gas-manuel-user i {
-    font-size: 30px;
-}
-
-.gas p {
-    font-size: 1.4rem;
-    margin-top: 7px;
-}
-.manuel p {
-    font-size: 1.4rem;
-    margin-top: 7px;
-}
-.users p {
-    font-size: 1.4rem;
-    margin-top: 7px;
-}
-
-.price-and-button {
-    justify-content: space-around;
-    align-items: center;
-    padding: .40rem 0 0 0;
-}
-
-.price-and-button h3 {
-    font-size: 1.6rem;
-}
-
-.price-and-button p {
-    font-size: 1.4rem;
-}
-
-.price-and-button button {
-    width: 15vw;
-}
-    
-}
-
-@media(max-width: 504px) {
-
-    .car-image img {
-        margin-left: 5rem;
     }
 }
